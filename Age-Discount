@@ -1,0 +1,19 @@
+# Example of inputting an integer age # with a response for a discount
+
+try:
+    age = int(input("Enter Age: "))
+except ValueError:
+    print("You must enter a number!")
+
+try:
+    if age <= 18:
+        print("You qualify for a 50% discount!")
+    elif age <= 30:
+        print("You qualify for a 50% discount!")
+    elif age >= 50:
+        print('You qualify for a 50% senior discount!')
+    else:
+        print("You do not qualify for a Discount!")
+    print("Proceed to checkout please!")
+except NameError:
+    print(" ")
